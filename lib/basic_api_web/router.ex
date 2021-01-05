@@ -7,6 +7,8 @@ defmodule BasicApiWeb.Router do
 
   scope "/api", BasicApiWeb do
     pipe_through :api
+
+    resources "/heros", HeroController, except: [:new, :edit]
   end
 
   # Enables LiveDashboard only for development
