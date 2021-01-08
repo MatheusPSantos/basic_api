@@ -1,5 +1,5 @@
 defmodule CompanyApiWeb.User do
-  user CompanyApiWeb, :model
+  use CompanyApiWeb, :model
   schema "users" do
     field :name, :string
     field :subname, :string
